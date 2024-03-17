@@ -1,7 +1,11 @@
 import { services } from "./utils"
+import pic from "./assets/services-sign.png"
+import "./Services.css"
+
 export default function Services() {
     return (
-        <section>
+        <section className="services">
+            <img className="services__img" src={pic} alt="услуги" />
             <h2>Как будет оказана помощь</h2>
             <ul>
                 {services.map((service) => {

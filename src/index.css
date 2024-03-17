@@ -34,6 +34,16 @@ body {
   font-optical-sizing: auto;
 }
 
+section {
+  box-sizing: border-box;
+  padding: 30px 15px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

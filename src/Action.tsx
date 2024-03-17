@@ -1,6 +1,7 @@
 import "./Action.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVk, faInstagram, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import picture from "./assets/bigstock-Health-food-selection-super-foods-fruits-veggies-thumb 1.png"
 export default function Action() {
     return (
         <section className="action">
@@ -29,7 +30,7 @@ export default function Action() {
             <div className="action__links">
                 <div className="action__links-content">
                     <div className="action__links-content-div">
-                        {/* <img></img> */}
+                        <img src={picture}></img>
                         <p className="action__links-content-div-p">Диагностика организма</p>
                         <span>60 минут</span>
                     </div>
