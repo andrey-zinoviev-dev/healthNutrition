@@ -9,7 +9,7 @@ export default function Services() {
             <h2>Как будет оказана помощь</h2>
             <ul className="services__ul">
                 {services.map((service) => {
-                    return <li key={service}>
+                    return <li className="services__ul-li" key={service}>
                         <p>{service}</p>
                         <div></div>
                     </li>
