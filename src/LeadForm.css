@@ -1,0 +1,51 @@
+.leadform {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leadform .container {
+  background-color: white;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 50px 25px;
+  position: relative;
+}
+
+.leadform-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: 2px solid #A08CE6;
+}
+
+.leadform h2 {
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.leadform form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.leadform form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+.leadform form button {
+  align-self: flex-start;
+  border: 2px solid #A08CE6;
+}
