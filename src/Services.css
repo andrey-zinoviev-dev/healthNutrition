@@ -1,3 +1,34 @@
 .services__img {
     max-width: 90px;
 }
+
+.services__ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 720px;
+    margin: 25px auto 0 auto;
+}
+
+.services__ul li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom: 1px solid #A08CE6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__ul li p {
+    line-height: 1;
+    margin: 0;
+}
+
+.services__ul li div {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #A08CE6;
+}
