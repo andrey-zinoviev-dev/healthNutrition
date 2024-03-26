@@ -54,3 +54,23 @@
     text-align: left;
     font-size: 14px;
 }
+
+@media screen and (max-width: 767px) {
+    .procedure__headline-wrapper {
+        flex-direction: column;
+    }
+    .procedure__headline-wrapper h2 {
+        font-size: 20px;
+    }
+    .procedure__ul {
+        /* max-width: 210px; */
+        grid-template-columns: repeat(1, 210px);
+        justify-content: center;
+    }
+    .procedure__ul-li {
+        min-height: 210px;
+    }
+    .services__ul li p {
+        text-align: left;
+    }
+}

@@ -63,3 +63,9 @@
 .about div img {
     width: 100%;
 }
+
+@media screen and (max-width: 424px) {
+    .about__wrapper {
+        flex-direction: column;
+    }
+}
