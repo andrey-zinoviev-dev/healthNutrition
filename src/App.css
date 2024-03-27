@@ -5,6 +5,7 @@
   text-align: center;
   box-sizing: border-box;
   width: 100%;
+  /* background-color: #f9f9f9; */
 }
 
 .logo {
@@ -50,5 +51,6 @@
 @media screen and (max-width: 767px) {
   #root {
     padding: 0;
+    background-color: #f9f9f9;
   }
 }

@@ -39,6 +39,9 @@
   border-radius: 3px;
   outline: none;
   padding: 5px 10px;
+  background-color: #eef1f8;
+  min-height: 30px;
+  color: black;
 }
 
 .subscribe form button {

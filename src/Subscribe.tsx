@@ -6,7 +6,7 @@ export default function Subscribe() {
                 <h2>Как быть в курсе всех последних трендов питания и нутрициологии?</h2>
                 <p>Подписаться на мой телеграм канал</p>
                 <form>
-                    <input></input>
+                    <input placeholder="Почта"></input>
                     <button>Подписаться</button>
                 </form>
             </div>
