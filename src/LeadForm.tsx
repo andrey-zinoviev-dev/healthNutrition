@@ -1,6 +1,7 @@
 import "./LeadForm.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faX } from "@fortawesome/free-solid-svg-icons"
+import pic from "./assets/process-pic.png"
 
 interface LeadForm {
     setFormOpened: React.Dispatch<React.SetStateAction<boolean>>,
@@ -17,7 +18,11 @@ export default function LeadForm({setFormOpened}: LeadForm) {
                 } className="leadform-close">
                     <FontAwesomeIcon icon={faX} />
                 </button>
-                <h2>Записаться на консультацию</h2>
+                <div>
+                    <h2>Записаться на консультацию</h2>
+                    <img src={pic} />
+                    <p>Скорее пройдите консультацию и получите персональный план, как получить свое тело мечты</p>
+                </div>
                 <form>
                     <input placeholder="Имя"></input>
                     <input placeholder="Телефон"></input>

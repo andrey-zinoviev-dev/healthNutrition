@@ -15,8 +15,13 @@
   background-color: white;
   border-radius: 12px;
   box-sizing: border-box;
-  padding: 50px 25px;
+  padding: 90px 25px;
   position: relative;
+  max-width: 540px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .leadform-close {
@@ -26,8 +31,28 @@
   border: 2px solid #A08CE6;
 }
 
+.leadform .container div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .leadform h2 {
-  margin: 0 0 15px 0;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.leadform .container img {
+  max-width: 90px;
+}
+
+.leadform .container div p {
+  font-size: 12px;
+  line-height: 1.2;
   font-weight: 500;
 }
 
@@ -36,16 +61,26 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  gap: 15px;
+  /* gap: 15px; */
+  width: 100%;
 }
 
 .leadform form input {
   width: 100%;
   box-sizing: border-box;
   padding: 10px 15px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.leadform form input:focus {
+  border-bottom: 2px solid #A08CE6;
 }
 
 .leadform form button {
-  align-self: flex-start;
+  /* align-self: flex-start; */
   border: 2px solid #A08CE6;
+  margin: 25px 0 0 0;
 }
