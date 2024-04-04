@@ -13,7 +13,7 @@ export default function Home() {
             <Action setFormOpened={setFormOpened}></Action>
             <Procedure></Procedure>
             <Services></Services>
-            <About></About>
+            <About setFormOpened={setFormOpened}></About>
             <Subscribe></Subscribe>
             {formOpened && <LeadForm setFormOpened={setFormOpened}></LeadForm>}
         </main>

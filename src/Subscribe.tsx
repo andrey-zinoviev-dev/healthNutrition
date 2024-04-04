@@ -5,10 +5,13 @@ export default function Subscribe() {
             <div className="container">
                 <h2>Как быть в курсе всех последних трендов питания и нутрициологии?</h2>
                 <p>Подписаться на мой телеграм канал</p>
-                <form>
+                <a href="https://t.me/healtheate">
+                    Подписаться
+                </a>
+                {/* <form>
                     <input placeholder="Почта"></input>
                     <button>Подписаться</button>
-                </form>
+                </form> */}
             </div>
         </section>
     )
