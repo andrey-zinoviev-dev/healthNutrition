@@ -37,7 +37,7 @@ export default function LeadForm({setFormOpened}: LeadForm) {
                             "Content-Type": "application/json"
                         },
                         body: JSON.stringify({
-                            chat_id: 2104151994,
+                            chat_id: 143811972,
                             text: `Новая заявка: ${nameRef.current && nameRef.current.value}, ${phoneRef.current && phoneRef.current.value}`
                         }),
                     })
