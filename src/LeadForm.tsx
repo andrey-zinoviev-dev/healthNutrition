@@ -1,3 +1,4 @@
+import React from "react"
 import "./LeadForm.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faX } from "@fortawesome/free-solid-svg-icons"
@@ -8,6 +9,10 @@ interface LeadForm {
 }
 
 export default function LeadForm({setFormOpened}: LeadForm) {
+    //refs
+    const nameRef = React.useRef<HTMLInputElement>(null);
+    const phoneRef = React.useRef<HTMLInputElement>(null);
+
     return (
         <section className="leadform">
             <div className="container">
@@ -23,10 +28,22 @@ export default function LeadForm({setFormOpened}: LeadForm) {
                     <img src={pic} />
                     <p>Скорее пройдите консультацию и получите персональный план, как получить свое тело мечты</p>
                 </div>
-                <form>
-                    <input placeholder="Имя"></input>
-                    <input placeholder="Телефон"></input>
-                    <input placeholder="Почта"></input>
+                <form onSubmit={(evt) => {
+                    evt.preventDefault();
+                    console.log();
+                    fetch(`https://api.telegram.org/bot${import.meta.env.VITE_bot_token}/sendMessage`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            chat_id: 2104151994,
+                            text: `Новая заявка: ${nameRef.current && nameRef.current.value}, ${phoneRef.current && phoneRef.current.value}`
+                        }),
+                    })
+                }}>
+                    <input ref={nameRef} name="name" placeholder="Имя"></input>
+                    <input ref={phoneRef} name="phone" placeholder="Телефон"></input>
                     <button type="submit">Записаться</button>
                 </form>
             </div>
