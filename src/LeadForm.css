@@ -15,7 +15,8 @@
   background-color: white;
   border-radius: 12px;
   box-sizing: border-box;
-  padding: 90px 25px;
+  padding: 75px 25px;
+  /* padding: 90px 25px; */
   position: relative;
   max-width: 540px;
   display: flex;
@@ -86,4 +87,53 @@
   border: 2px solid #A08CE6;
   margin: 25px 0 0 0;
   color: #213547;
+}
+
+.leadform__success-wrapper {
+  max-width: 240px;
+  text-align: left;
+}
+
+.leadform__success-wrapper h3 {
+  margin: 0;
+}
+
+.leadform__success-wrapper p {
+  font-size: 16px;
+
+}
+
+.leadform__success-wrapper ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 15px;
+  font-size: 30px;
+  margin: 0;
+}
+
+.leadform__success-wrapper ul li a {
+  color: black;
+}
+
+.leadform__success-wrapper ul li a:hover {
+  color: #A08CE6 ;
+}
+
+@media screen and (max-width: 767px) {
+  .leadform .container {
+    max-width: 360px;
+    flex-direction: column;
+  }
+
+  .leadform form {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .leadform .container {
+    max-width: 300px;
+    flex-direction: column;
+  }
 }
